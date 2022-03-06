@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>MukhammadzodaM</title>
+          <link rel="stylesheet" href="{% static 'app.css' %}">
+         
+</head>
+<body>
+        <div class="wrapper">
+<div class="IMG">
+          <img src="{% static 'muhammadumar.jfif' %}" alt="" class="img">
+          <h2 class="Title">Muhammad Umar</h2>
+          <h4 class="title2">middle Frontend dev</h4>         
+</div>
+<div class="About">
+<h1 class="title_small">A little bit about me</h1>
+<p class="about_me">Everything is pretty simple here. It is my daily activity to do researches based on anything that gets my attention (mostly related to computer science, and science in general).
+        Do you want to "Attack on Titan" with "Your Name" written on your T-shirt?</p>
+</div>
+<div class="About">
+<h1 class="title_small">What I know?</h1>
+{% for skill in skills %}
+     <h3 class="name">{{skill.title}}</h3>
+     <p class="about_me">{{skill.definition}}</p>
+
+{% endfor %}
+</div>
+<div class="About">
+<h1 class="title_small">What I've done so far...</h1>
+{% for done in doneprojects %}
+     <p> <a href="{{done.url}}" class="about_me" >{{done.name}}</a></p>
+       
+{% endfor %} 
+</div>
+
+<div class="About">
+<h1 class="title_small">Chronology</h1>
+{% for chronology in chronology %}
+   <h3 class="name2">{{chronology.date}}</h3>
+   <p class="about_me2">{{chronology.defi}}</p>
+{% endfor %}
+</div>
+
+<!-- Contact  -->
+<div class="About">
+<h1 class="title_small">Contacts
+</h1>
+{% for contact in contact %}
+    <p class="about_me3">{{contact.social}} <a href="{{contact.contact_link}}">{{contact.contact_name}}</a></p>
+{% endfor %}
+</div>
+        </div>  
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+          box-sizing: border-box;
+}
+
+.img {
+          border-radius: 50%;
+          object-fit: contain;
+          width: 200px;
+          margin-bottom: 0;
+}
+
+.title2 {
+          margin-top: 3px;
+          font-weight: bold;
+          color: grey;
+
+}
+
+.SWSWSWS {
+          float: right;
+}
+
+.wrapper {
+          margin-top: 2rem;
+}
+
+.IMG {
+          text-align: center;
+}
+
+.Title {
+          font-family: fantasy;
+          margin-top: 0;
+          margin-bottom: 0;
+}
+
+.name {
+          margin: 24px 0 8px 0;
+          font-weight: 500;
+          font-size: 20px;
+          margin-left: 16px;
+}
+
+.name2 {
+          margin: 24px 0 8px 0;
+          font-weight: 500;
+          font-size: 23px;
+          margin-left: 16px;
+}
+
+.About {
+          padding: 0 372px;
+          margin-top: 32px;
+          font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+          ;
+
+}
+
+.title_small {
+          line-height: 28.8px;
+          font-weight: 500;
+          font-size: 1.7rem;
+          margin-top: 0;
+}
+
+.about_me {
+          margin-left: 18px;
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 1.5;
+          font-size: 18px;
+}
+
+.about_me2 {
+          line-height: 1.5;
+          font-size: 17px;
+          margin-left: 16px;
+          margin-top: 0;
+          border-bottom: 2px solid grey;
+          padding-bottom: 1rem;
+}
+
+.about_me2,
+.about_me3 {
+          line-height: 1.5;
+          font-size: 17px;
+          margin-left: 18px;
+          margin-top: 0;
+
+}
+
+@media screen and (max-width: 1000.9px) {
+          .About p {
+                    margin-left: 18px;
+          }
+
+          .about_me {
+                    margin-left: 0;
+          }
+
+          .About {
+                    padding: 0;
+
+
+          }
+
+          .about_me2 {
+                    line-height: 1;
+                    font-size: 14px;
+                    margin-left: 0;
+                    padding-bottom: 0.5rem;
+          }
+}
+
+@media(min-width:1001px) and (max-width:1365.9px) {}
